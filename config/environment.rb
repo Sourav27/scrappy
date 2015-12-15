@@ -11,7 +11,7 @@ ActionMailer::Base.smtp_settings = {
       :domain               => "scrapwala.herokuapp.com",
       :user_name            => ENV["GMAIL_USERNAME"],
       :password             => ENV["GMAIL_PASSWORD"],
-      :authentication       => :plain,
+      :authentication       => :login,
       :enable_starttls_auto => true,
 	  :openssl_verify_mode  => 'none' 
 }
